@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:lets_cook/pages/categories_meals_page.dart';
 import 'package:lets_cook/pages/categories_page.dart';
+import 'package:lets_cook/utils/app_routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +30,10 @@ class MyApp extends StatelessWidget {
               color: Colors.white),
         ),
       ),
-      home: const CategoriesPage(),
+      routes: {
+        AppRoutes.HOME: (ctx) => const CategoriesPage(),
+        AppRoutes.CATEGORIES_MEALS:(ctx) => CategoriesMealsPage(),
+      },
     );
   }
 }
