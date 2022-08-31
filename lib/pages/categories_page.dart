@@ -12,12 +12,12 @@ class CategoriesPage extends StatelessWidget {
         title: const Text("Let's cook?"),
       ),
       body: GridView(
+        padding: const EdgeInsets.all(15),
         gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-          maxCrossAxisExtent: 200,
-          childAspectRatio: 3 / 2,
-          crossAxisSpacing: 20,
-          mainAxisSpacing: 20
-        ),
+            maxCrossAxisExtent: 200,
+            childAspectRatio: 3 / 2,
+            crossAxisSpacing: 20,
+            mainAxisSpacing: 20),
         children: DUMMY_CATEGORIES.map((e) {
           return CategoryItem(e);
         }).toList(),
