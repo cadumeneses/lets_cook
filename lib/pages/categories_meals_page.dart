@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:lets_cook/components/category_item.dart';
-import 'package:lets_cook/data/dummy_data.dart';
 import '../models/category.dart';
 
 class CategoriesMealsPage extends StatelessWidget {
+  const CategoriesMealsPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     final category = ModalRoute.of(context)?.settings.arguments as Category;
