@@ -9,7 +9,12 @@ class CategoriesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Let's cook?"),
+        title: Center(
+          child: Text(
+            "Let's Cook?",
+            style: Theme.of(context).textTheme.headline6,
+          ),
+        ),
       ),
       body: GridView(
         padding: const EdgeInsets.all(15),
