@@ -90,13 +90,24 @@ class MealDetailPage extends StatelessWidget {
                         ),
                         title: Text(meal.steps[index]),
                       ),
-                      Divider(),
+                      const Divider(
+                        color: Colors.red,
+                      ),
                     ],
                   );
                 },
               ),
             ),
           ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.of(context).pop(meal);
+        },
+        backgroundColor: Colors.amber,
+        child: const Icon(
+          Icons.star,
         ),
       ),
     );
