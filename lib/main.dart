@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:lets_cook/pages/tabs_page.dart';
+
+import 'utils/app_routes.dart';
+
+import 'pages/settings_page.dart';
+import 'pages/tabs_page.dart';
 import 'pages/categories_meals_page.dart';
 import 'pages/categories_page.dart';
 import 'pages/meal_detail_page.dart';
-import 'utils/app_routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -40,6 +43,7 @@ class MyApp extends StatelessWidget {
         AppRoutes.home: (ctx) => const TabsPage(),
         AppRoutes.categoriesMeals: (ctx) => const CategoriesMealsPage(),
         AppRoutes.mealsDetail: (ctx) => const MealDetailPage(),
+        AppRoutes.settings: (ctx) => const SettingsPage(),
       },
       onUnknownRoute: (settings) {
         return MaterialPageRoute(
