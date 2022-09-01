@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lets_cook/pages/tabs_page.dart';
 import 'pages/categories_meals_page.dart';
 import 'pages/categories_page.dart';
 import 'pages/meal_detail_page.dart';
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
                 color: Colors.red),
           )),
       routes: {
-        AppRoutes.home: (ctx) => const CategoriesPage(),
+        AppRoutes.home: (ctx) => const TabsPage(),
         AppRoutes.categoriesMeals: (ctx) => const CategoriesMealsPage(),
         AppRoutes.mealsDetail: (ctx) => const MealDetailPage(),
       },
